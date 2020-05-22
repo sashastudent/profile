@@ -1,0 +1,23 @@
+.list-group-item{
+    margin-top: 10px;
+    border: 0px;
+    background-color: whitesmoke;;
+  /*   background-color: #e0f0f0; */
+}
+button.list-group-item:hover{
+    background-color: #e0f0f0;
+}
+.inactive{
+    background-color:dodgerblue;
+    color: white;
+}
+
+.text-center{
+    text-align: center;
+}
+.score{
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+    color: gold;
+}

@@ -1,0 +1,30 @@
+<div class="container" >
+    <div class="modal-body">
+       <div class="row">
+            <div class="col-md-12">
+                <ngb-carousel *ngIf="imagList">
+                    <ng-template ngbSlide *ngFor="let img of imagList">
+                      <div class="picsum-img-wrapper center-img">
+                        <img [src]="img" alt="Random first slide" class="img-fluid img-responsive"> 
+                      </div>
+                    </ng-template>
+                  </ngb-carousel> 
+           </div>
+           <div class="col-md-12">
+               <div class="modal-footer">
+                 <button type="button" class="btn btn-outline-dark " aria-label="Close" (click)="modal.dismiss('Cross click')">close</button>
+               </div>
+           </div>
+       </div> 
+
+      </div> 
+   </div>
+
+<!-- 
+<div class="row">
+    <div class="col-md-2">
+         <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+             close
+           <span aria-hidden="true">&times;</span> 
+         </button>
+    </div> -->

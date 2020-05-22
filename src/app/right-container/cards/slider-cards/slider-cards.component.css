@@ -1,0 +1,42 @@
+.card{
+    display: table-cell;
+    cursor: pointer;
+ }
+ .card:hover{
+     background-color: aliceblue ;
+ }
+ .container {
+    font-size: 16px;
+    height: 150px;
+    overflow: hidden;
+  /* line-height: 16px;*/
+ }
+ .show {
+    overflow: visible;
+    height: auto;
+}
+.center-horizontally-box{
+    display: flex;
+    height: 15rem;
+   /* background-color: whitesmoke;*/
+   background-color: white;
+    overflow: hidden;
+}
+.center-horizontally-box .center-horizontally{
+    margin: auto auto;
+}
+a.show-less-more{
+    font-weight: bold;
+    font-size: small; 
+    margin-left: 16px;
+}
+/* .carousel-item {
+    transition-duration: 2s;
+  } */
+  
+.owl-prev {
+    background-image: url('/assets/arrow-right-solid.svg') !important;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-size: 300px 100px;
+}

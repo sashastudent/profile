@@ -1,0 +1,8 @@
+.modal-footer{
+    border: solid 0px;
+    justify-content: center;
+}
+.center-img{
+    display: flex;
+    justify-content: center;
+}

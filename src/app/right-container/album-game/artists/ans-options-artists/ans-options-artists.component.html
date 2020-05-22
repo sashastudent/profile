@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="list-group" *ngIf=!gameOver>
+            <button 
+                type="button"
+                class="list-group-item list-group-item-action range"  
+                data-toggle="list"
+                *ngFor="let ans of optionsList; let i = index;" 
+                (click)="onAnswer(ans); active = i;"
+                [ngClass]="active === i ? 'inactive': '' " 
+                [ngStyle]="{'background-color': active === i && isBadAns ? '#F31431' : '' }"
+                >{{ans.name | uppercase}}
+            </button>
+        </div>
+        <div *ngIf=gameOver>
+            <h2 class="text-center">GAME OVER</h2>
+            <p class="text-center">Good work your score</p> 
+            <p class="score">{{score}}</p>
+         </div>
+    </div>
+</div>

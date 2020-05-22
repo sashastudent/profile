@@ -1,0 +1,17 @@
+.product-lockup__artwork-for-radiosity-effect{
+    position: absolute;
+    transform: scale(.92) translateY(calc(4% + 14px)) translateZ(0);
+    -webkit-filter: blur(30px) brightness(130%);
+    filter: blur(30px) brightness(130%);
+    opacity: .55;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+}
+.imp{
+    width: 150px;
+    height: 125px;
+    background-repeat: no-repeat;
+    background-size: over;
+    background-position: center;
+}

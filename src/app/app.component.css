@@ -1,0 +1,14 @@
+.left-side-container{
+    padding: 30px;
+   /*  background-color: lightblue; */
+    background-color: steelblue;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius:5px;
+}
+
+.right-side-container{
+    padding: 30px;
+    background-color: #fafafa;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius:5px;
+}
