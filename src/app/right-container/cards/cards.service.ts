@@ -13,9 +13,9 @@ export class CardsService{
             ["assets/images/shoppingAgent/general_area.png","assets/images/shoppingAgent/filltesr.png"],false
             ),
         new Card("Guess whose the album Game",
-                `Guess whose the album is a fun game that use itunes apple API and coded used by angular 9.
-                album be displayed and you need gusses the arttist,
-                choose one option from four and get 10 point for correct guess and Bonus of 10 points for 3 consecutive guesses.
+                `Guess whose the album is a fun game that use itunes apple API and powered by angular 9.
+                album will be displayed and you need gusses the arttist,
+                choose one option from four and get 10 point, 3 consecutive guesses get you bonus of 10 points more.
                 start to play and have a fun.`
                 ,"#","Start Game","assets/images/music-game/album_game-01.png",["assets/images/music-game/album_game-01.png"], false),
         new Card("To do list",

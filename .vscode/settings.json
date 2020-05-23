@@ -1,8 +1,2 @@
 {
-    "appService.zipIgnorePattern": [
-        "node_modules{,/**}",
-        ".vscode{,/**}"
-    ],
-    "appService.defaultWebAppToDeploy": "/subscriptions/397cb29c-0a92-4913-bd9a-1eb55872de3d/resourceGroups/sasha-blank.com/providers/Microsoft.Web/sites/sasha-blank",
-    "appService.deploySubpath": "dist\\sasha-blank.com"
 }
