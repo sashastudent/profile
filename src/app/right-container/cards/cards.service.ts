@@ -19,7 +19,7 @@ export class CardsService{
                 start to play and have a fun.`
                 ,"#","Start Game","assets/images/music-game/album_game-01.png",["assets/images/music-game/album_game-01.png"], false),
         new Card("To do list",
-                `JavaeEE Project use Hibernate and JSP fiels, contains user management and their task list. For data base used MySQL
+                `JavaEE Project use Hibernate and JSP fiels, contains user management and their task list. For data base used MySQL
                  for the envirement used Eclipse Java Neon.
                  To do list project made during the degree studies for learn java language.`
                 ,"https://github.com/sashastudent/ToDoList","Go to GhitHub","assets/images/TodoList/todolist-01.png",["assets/images/TodoList/todolist-01.png"], false)
