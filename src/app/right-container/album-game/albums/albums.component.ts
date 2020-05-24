@@ -16,7 +16,7 @@ export class AlbumsComponent implements OnInit {
   constructor(private apiRequestsService: ApiRequestsService, private roundService: RoundService) { }
 
   ngOnInit(): void {
-    this.album.artworkUrl100 = "https://upload.wikimedia.org/wikipedia/commons/e/ec/Record-Album-02.jpg";
+    this.album.artworkUrl100 = "assets/images/music-game/record-album-02.jpg";
 
     this.roundService.qAlbomEmit.subscribe((qAlbum:Album)=>{
       this.album = qAlbum;
@@ -26,11 +26,11 @@ export class AlbumsComponent implements OnInit {
   onStart(){
     this.startGame = true;
      this.apiRequestsService.fetchAlbum()
-    .subscribe(albomRes => 
+    .subscribe(albomRes =>
       {
-          console.log(albomRes); 
+          console.log(albomRes);
           this.album = this.roundService.setQalbum(albomRes);
-      }); 
-  
+      });
+
   }
 }
