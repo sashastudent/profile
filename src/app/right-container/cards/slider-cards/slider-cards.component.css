@@ -9,6 +9,9 @@
     font-size: 16px;
     height: 150px;
     overflow: hidden;
+    word-break: break-word;
+    white-space: pre-line;
+    overflow-wrap: break-word;
   /* line-height: 16px;*/
  }
  .show {
@@ -27,16 +30,7 @@
 }
 a.show-less-more{
     font-weight: bold;
-    font-size: small; 
+    font-size: small;
     margin-left: 16px;
 }
-/* .carousel-item {
-    transition-duration: 2s;
-  } */
-  
-.owl-prev {
-    background-image: url('/assets/arrow-right-solid.svg') !important;
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-size: 300px 100px;
-}
+

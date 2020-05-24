@@ -50,21 +50,21 @@ export class SliderCardsComponent implements OnInit {
     this.cardslist = this.cardsService.getCards();
     console.log(this.cardslist);
 
-  
+
   }
 
   onButton(cardItem: Card){
-    if(cardItem.name == "Guess whose the album Game"){
+    if(cardItem.name == "Guess Artist Game"){
       this.open();
     }
   }
 
   open() {
-    const ref = this.modalService.open(AlbumGameComponent, {ariaLabelledBy: 'modal-basic-title', size: 'lg'});  
+    const ref = this.modalService.open(AlbumGameComponent, {ariaLabelledBy: 'modal-basic-title', size: 'lg'});
 
     ref.result.then((cancel)=>{
     })
-/* 
+/*
      this.modalService.open(AlbumGameComponent, {ariaLabelledBy: 'modal-basic-title', size: 'lg'}).result.then((result) => {
       this.closeResult = `Closed with: ${result}`;
     }, (reason) => {
@@ -78,7 +78,7 @@ export class SliderCardsComponent implements OnInit {
      ref.componentInstance.imagList = cardItem.imagsList;
 
   }
- 
+
   private getDismissReason(reason: any): string {
 
     if (reason === ModalDismissReasons.ESC) {
@@ -99,14 +99,14 @@ export class SliderCardsComponent implements OnInit {
 
 
   images = [62, 83, 466, 965, 982, 1043, 738].map((n) => `https://picsum.photos/id/${n}/900/500`);
-  
+
     paused = false;
     unpauseOnArrow = false;
     pauseOnIndicator = false;
     pauseOnHover = true;
-  
+
     @ViewChild('carousel', {static : true}) carousel: NgbCarousel;
-  
+
     togglePaused() {
       if (this.paused) {
         this.carousel.cycle();
@@ -115,7 +115,7 @@ export class SliderCardsComponent implements OnInit {
       }
       this.paused = !this.paused;
     }
-  
+
     onSlide(slideEvent: NgbSlideEvent) {
       if (this.unpauseOnArrow && slideEvent.paused &&
         (slideEvent.source === NgbSlideEventSource.ARROW_LEFT || slideEvent.source === NgbSlideEventSource.ARROW_RIGHT)) {
