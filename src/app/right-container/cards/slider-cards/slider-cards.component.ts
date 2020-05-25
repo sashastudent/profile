@@ -54,23 +54,18 @@ export class SliderCardsComponent implements OnInit {
   }
 
   onButton(cardItem: Card){
-    if(cardItem.name == "Guess Artist Game"){
+    if(cardItem.name == "Guess the Artist game"){
       this.open();
     }
   }
 
   open() {
     const ref = this.modalService.open(AlbumGameComponent, {ariaLabelledBy: 'modal-basic-title', size: 'lg'});
-
     ref.result.then((cancel)=>{
     })
-/*
-     this.modalService.open(AlbumGameComponent, {ariaLabelledBy: 'modal-basic-title', size: 'lg'}).result.then((result) => {
-      this.closeResult = `Closed with: ${result}`;
-    }, (reason) => {
-      this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
-    });  */
   }
+
+
 
   onImage(cardItem:Card){
      const ref= this.modalService.open(GalleryModalComponent,{ariaLabelledBy: 'modal-basic-title', size: 'xl'} );

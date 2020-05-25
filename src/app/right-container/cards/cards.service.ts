@@ -2,14 +2,14 @@ import { Card } from './card.model';
 
 export class CardsService{
     private cardsList : Card[] = [
-        new Card("Shopping Agent","Shopping agent is recommendation ML/AI system that help the customer to do ease and fast purchase, by recommend him groceries that the customer would to buy. The system learn the customer and do recommendation by using other customers and theirs purchases habits in the system. For the learning algorithm used Matrix factorization for the language used Python and MS SQL for storage data."
+        new Card("Shopping Agent","Shopping Agent is a recommendation ML/AI system that can help customers make faster and easier purchases by recommending which products to buy. The system learns customer preferences and makes recommendations based on the customer's buying habits and history. The learning algorithm uses Matrix Factorization, the language is Python and MS SQL is utilised for data storage."
             ,"https://github.com/sashastudent/ShoppingAgent/tree/master/TheLearningAgentClient/bin/Release/Scripts/LoyalCust","Go to GhitHub",
             "assets/images/shoppingAgent/general_area.png",
             ["assets/images/shoppingAgent/general_area.png","assets/images/shoppingAgent/filltesr.png"],false
             ),
-        new Card("Guess Artist Game","Guess which artist create the album is a fun game that use iTunes API and powered by angular 9. Album will be displayed and you need guesses the artist, choose one answer from the option list and get 10 points, 3 consecutive guesses get you bonus of 10 points more. Start to play and have fun."
+        new Card("Guess the Artist game","Guess the Artist is a fun game that asks players to select the correct artist by looking at album covers. It uses the ITunes API and is powered by angular 9."
                 ,"#","Start Game","assets/images/music-game/album_game-01.png",["assets/images/music-game/album_game-01.png"], false),
-        new Card("To do list","JavaEE Project use Hibernate and JSP files, contains user management and their task list. For data base used MySQL for the environment used Eclipse Java Neon. To do list project made during the degree studies for learn Java language."
+        new Card("To do list","To do list is a JavaEE project that uses Hibernate and JSP files, contains user management and a task list function. For database used MySQL for the environment used Eclipse Java Neon. I developed the To do list during my university studies to learn Java."
                 ,"https://github.com/sashastudent/ToDoList","Go to GhitHub","assets/images/TodoList/todolist-01.png",["assets/images/TodoList/todolist-01.png"], false)
     ]
 

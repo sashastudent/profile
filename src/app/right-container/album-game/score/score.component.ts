@@ -29,10 +29,10 @@ export class ScoreComponent implements OnInit {
   bonus: string ='';
   path:string ='assets/images/music-game/star.svg';
   state = 'normal';
-      
 
-  constructor(private scoreService: ScoreService, private roundService: RoundService) { 
-    this.score = this.scoreService.score;  
+
+  constructor(private scoreService: ScoreService, private roundService: RoundService) {
+    this.score = this.scoreService.score;
   }
 
   ngOnInit(): void {
@@ -41,17 +41,16 @@ export class ScoreComponent implements OnInit {
     });
 
     this.roundService.bonusEmit.subscribe((bonus :string)=>{
-      debugger;
       this.bonus = bonus;
       if(this.state == 'normal'){
         this.state = 'hidden';
       }
     })
-  
+
   }
   bonusHidden(event){
     this.state = 'normal';
   }
-     
+
 
 }

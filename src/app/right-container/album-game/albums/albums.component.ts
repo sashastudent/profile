@@ -28,7 +28,6 @@ export class AlbumsComponent implements OnInit {
      this.apiRequestsService.fetchAlbum()
     .subscribe(albomRes =>
       {
-          console.log(albomRes);
           this.album = this.roundService.setQalbum(albomRes);
       });
 
