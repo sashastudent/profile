@@ -12,8 +12,8 @@
                           {{cardItem.summery}}
                         </div>
                          <!--<a class="show-less-more" (click)="cardItem.showMore = !cardItem.showMore">{{ cardItem.showMore ? 'show less-': 'show more+' }}</a>-->
-                          <a class="show-less-more" (click)="cardItem.showMore = !cardItem.showMore" *ngIf="cardItem.summery.length >= 200 && cardItem.showMore" >show less-</a>
-                          <a class="show-less-more" (click)="cardItem.showMore = !cardItem.showMore" *ngIf="cardItem.summery.length >= 200 && !cardItem.showMore" >show more+</a>
+                          <a class="show-less-more" (click)="cardItem.showMore = !cardItem.showMore" *ngIf="cardItem.summery.length >= 200 && cardItem.showMore" >-show less</a>
+                          <a class="show-less-more" (click)="cardItem.showMore = !cardItem.showMore" *ngIf="cardItem.summery.length >= 200 && !cardItem.showMore" >+show more</a>
                           <a style="color: white; opacity: 0;"  *ngIf="cardItem.summery.length < 200 " >invisible text</a>
                         <div style="margin-top: 10px;"><a href="{{cardItem.link}}" class="btn btn-primary" (click)="cardItem.link == '#' ? onButton(cardItem) :'' " >{{cardItem.stringButton}}</a></div>
                     </div>
